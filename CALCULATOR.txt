@@ -1,0 +1,501 @@
+import java.io.*;
+class ANIL_CALCULATOR
+{
+   public static void main(String args[])throws IOException
+     {
+      InputStreamReader in=new InputStreamReader(System.in);
+      BufferedReader read=new BufferedReader(in);
+      for (int mode=0;mode<=36;mode++)
+       {
+          
+      System.out.println("CHOOSSE MODE   ");
+      System.out.println("1.SIMPLE MODE  ");
+      System.out.println("2.SCIENTIFIC MODE ");
+      mode=Integer.parseInt(read.readLine());
+      switch(mode)
+      {
+          case 1:
+          System.out.println("SIMPLE MODE SELECTED");
+        System.out.println("                             (1.DIVIDE    /)    (4.CIRCUMFLEX ^)    (7.SQUARE ROOT )       ");
+        System.out.println("                             (2.ADDITION  +)    (5.SUBTRACT   -)    (8.CUBE ROOT   )       ");
+        System.out.println("                             (3.PECENTAGE %)    (6.MULTIPLY   *)    (9.EXPONENT    )       ");
+        System.out.println("ENTER YOUR CHOICE TO USE FOLLOWING CALCULATION,eg.1 to divide,2 to add etc.");
+        int ch=Integer.parseInt(read.readLine());
+        //STARTING
+        if (ch==1)
+        {
+            System.out.println("ENTER TWO NUMBERS TO DIVIDE");
+           double D1=Double.parseDouble(read.readLine());
+           double D2=Double.parseDouble(read.readLine());
+            double divide=D1/D2;
+            System.out.println("RESULT="+divide);
+          
+        System.out.println("ENTER '1' FOR OTHER CALCULATION");
+        System.out.println("ENTER '2' TO QUIT");
+          int choi=Integer.parseInt(read.readLine());
+        if (choi==2)
+            {
+                   System.exit(12);
+            }      
+            //ENDING
+        }
+        if (ch==2)
+        {
+            System.out.println("ENTER TWO NUMBERS TO ADD");
+            int add1=Integer.parseInt(read.readLine());
+            int add2=Integer.parseInt(read.readLine());
+            int addition=add1+add2;
+            System.out.println("RESULT="+addition);
+        
+            System.out.println("ENTER '1' FOR OTHER CALCULATION");
+            System.out.println("ENTER '2' TO QUIT");
+            int choi=Integer.parseInt(read.readLine());
+         if (choi==2)
+            {
+                System.exit(12);
+            }      
+        }
+        if (ch== 3)
+        {
+            System.out.println("ENTER TWO NUMBERS TO FIND PERCENTAGE");
+            double PER1=Double.parseDouble(read.readLine());
+            double PER2=Double.parseDouble(read.readLine());
+            double PER=(PER2+PER1);
+            double perc=(PER*100)/200;
+            System.out.println("RESULT="+perc+"%");
+            System.out.println("ENTER '1' FOR OTHER CALCULATION");
+            System.out.println("ENTER '2' TO QUIT");
+            int  choi=Integer.parseInt(read.readLine());
+          if (choi==2)
+            {
+                System.exit(12);
+            } 
+        }
+        
+        if (ch==4)
+        {
+            System.out.println("ENTER TWO NUMBERS TO FIND CIRCUMFLEX");
+            int CIR1=Integer.parseInt(read.readLine());
+            int CIR2=Integer.parseInt(read.readLine());
+            int CIRCUMFLEX=CIR1^CIR2;
+            System.out.println("RESULT="+CIRCUMFLEX);
+            
+            System.out.println("ENTER '1' FOR OTHER CALCULATION");
+            System.out.println("ENTER '2' TO QUIT");
+            int choi=Integer.parseInt(read.readLine());
+         if (choi==2)
+            {
+                System.exit(12);
+            }      
+        }
+             if (ch==5)
+        {
+            System.out.println("ENTER TWO NUMBERS TO SUBTRACT");
+            int SUB1=Integer.parseInt(read.readLine());
+            int SUB2=Integer.parseInt(read.readLine());
+            int SUBTRACTION=SUB1-SUB2;
+            System.out.println("RESULT="+SUBTRACTION);
+            
+            System.out.println("ENTER '1' FOR OTHER CALCULATION");
+            System.out.println("ENTER '2' TO QUIT");
+            int choi=Integer.parseInt(read.readLine());
+         
+         if (choi==2)
+            {
+                System.exit(12);
+            }      
+        }
+        if (ch==6)
+        {
+            System.out.println("ENTER TWO NUMBERS TO MULTIPLY");
+            int MUL1=Integer.parseInt(read.readLine());
+            int MUL2=Integer.parseInt(read.readLine());
+            int MULTIPLICATION=MUL1*MUL2;
+            System.out.println("RESULT="+MULTIPLICATION);
+        
+            System.out.println("ENTER '1' FOR OTHER CALCULATION");
+            System.out.println("ENTER '2' TO QUIT");
+            int choi=Integer.parseInt(read.readLine());
+         
+         if (choi==2)
+            {
+                System.exit(12);
+            }      
+        }
+        if (ch==7)
+        {
+            System.out.println("ENTER A NUMBER TO FIND SQUARE ROOT");
+            double SQU1=Double.parseDouble(read.readLine());
+            double SQRT=Math.sqrt(SQU1);
+            System.out.println("RESULT="+SQRT);
+        
+            System.out.println("ENTER '1' FOR OTHER CALCULATION");
+            System.out.println("ENTER '2' TO QUIT");
+            int choi=Integer.parseInt(read.readLine());
+         
+         if (choi==2)
+            {
+                System.exit(12);
+            }      
+        }
+        if (ch==8)
+        {
+            System.out.println("ENTER A NUMBER TO FIND CUBE ROOT");
+            double CUB1=Double.parseDouble(read.readLine());
+            double CBRT=Math.cbrt(CUB1);
+            System.out.println("RESULT="+CBRT);
+        
+            System.out.println("ENTER '1' FOR OTHER CALCULATION");
+            System.out.println("ENTER '2' TO QUIT");
+            int choi=Integer.parseInt(read.readLine());
+         
+         if (choi==2)
+            {
+                System.exit(12);
+            }      
+        }
+        if (ch==9)
+        {
+            System.out.println("ENTER A NUMBER TO FIND EXPONENT");
+            double EXC1=Double.parseDouble(read.readLine());
+            double EXPONENT =Math.exp(EXC1);
+            System.out.println("RESULT="+EXPONENT );
+        
+            System.out.println("ENTER '1' FOR OTHER CALCULATION");
+            System.out.println("ENTER '2' TO QUIT");
+            int choi=Integer.parseInt(read.readLine());
+         
+         if (choi==2)
+            {
+                System.exit(12);
+            }      
+        }      
+        break;
+        case 2:
+      
+        System.out.println("SCIENTIFIC MODE SELECTED");
+        System.out.println("                              (1.DIVIDE    /)    (7.CIRCUMFLEX     ^)     (13.SQUARE ROOT )     ");
+        System.out.println("                              (2.ADDITION  +)    (8.SUBTRACT       -)     (14.CUBE ROOT   )     ");
+        System.out.println("                              (3.PECENTAGE %)    (9.MULTIPLY       *)     (15.EXPONENT    )     ");
+        System.out.println("                              (4.COSINE  COS)    (10.ADD/SUB     +/-)     (16.Y ROOT X    )     ");
+        System.out.println("                              (5.TANGENT TAN)    (11.LOGIRITHAM  LOG)     (17.Y POWER X   )     ");
+        System.out.println("                              (6.SINE    SIN)    (12.POWER       10x)     (18.FACTORIAL   )      ");
+        System.out.println("ENTER YOUR CHOICE TO USE FOLLOWING CALCULATION,eg.1 to divide,2 to add etc.");
+         ch=Integer.parseInt(read.readLine());
+         
+        if (ch==1)
+        {
+            System.out.println("ENTER TWO NUMBERS TO DIVIDE");
+           double D1=Double.parseDouble(read.readLine());
+           double D2=Double.parseDouble(read.readLine());
+            double divide=D1/D2;
+            System.out.println("RESULT="+divide);
+        
+        //for all steps
+        System.out.println("ENTER '1' FOR OTHER CALCULATION");
+        System.out.println("ENTER '2' TO QUIT");
+          int choi=Integer.parseInt(read.readLine());
+        if (choi==3)
+            {
+                System.exit(12);
+            }      
+            //ENDING
+        }
+        if (ch==2)
+        {
+            System.out.println("ENTER HOW MANY NUMBERS YOU WANT TO ADD");
+            int lo=Integer.parseInt(read.readLine());
+            int s=0;
+            System.out.println("ENTER "+lo+" NUMBER TO ADD");
+            for (int i=1;i<=lo;i++)
+            {
+            int add1=Integer.parseInt(read.readLine());
+            s=s+add1;
+        }
+            System.out.println("RESULT="+s);
+        
+            System.out.println("ENTER '1' FOR OTHER CALCULATION");
+            System.out.println("ENTER '2' TO QUIT");
+            int choi=Integer.parseInt(read.readLine());
+         if (choi==2)
+            {
+                System.exit(12);
+            }      
+        }
+        if (ch== 3)
+        {
+            System.out.println("ENTER HOW MANY NUMBERS YOU WANT TO TAKE TO FIND PERCENTAGE");
+            int lo=Integer.parseInt(read.readLine());
+            double s=0;
+            System.out.println("ENTER "+lo+" NUMBER TO FIND THE PERCENTAGE");
+            for (int i=1;i<=lo;i++)
+            {
+             double PER1=Double.parseDouble(read.readLine());
+             s=s+PER1;
+             int p=(int)s;
+            }
+           
+            double perc=(s*100)/(lo*100);
+            System.out.println("RESULT="+perc+"%");
+            System.out.println("ENTER '1' FOR OTHER CALCULATION");
+            System.out.println("ENTER '2' TO QUIT");
+            int  choi=Integer.parseInt(read.readLine());
+        
+          if (choi==2)
+            {
+                System.exit(12);
+            } 
+        }
+        if (ch==4)
+        {
+            System.out.println("ENTER TWO NUMBERS TO FIND THE VALUE OF COSINE");
+            int COS1=Integer.parseInt(read.readLine());
+            double cosine=Math.cosh(COS1);
+            System.out.println("RESULT="+cosine);
+            System.out.println("ENTER '1' FOR OTHER CALCULATION");
+            System.out.println("ENTER '2' TO QUIT");
+            int choi=Integer.parseInt(read.readLine());
+         
+         if (choi==2)
+            {
+                System.exit(12);
+            }      
+        }
+        if (ch==5)
+        {
+            System.out.println("ENTER A NUMBER TO FIND THE VALUE OF TANGENT");
+            int TAN=Integer.parseInt(read.readLine());
+            double TANGENT=Math.tan(TAN);
+            System.out.println("RESULT="+TANGENT);
+            System.out.println("ENTER '1' FOR OTHER CALCULATION");
+            System.out.println("ENTER '2' TO QUIT");
+            int choi=Integer.parseInt(read.readLine());
+         
+         if (choi==2)
+            {
+                System.exit(12);
+            }      
+        }
+         if (ch==6)
+        {
+            System.out.println("ENTER A NUMBER TO FIND THE VALUE OF SINE");
+            double SIN=Double.parseDouble(read.readLine());
+            double SINE=Math.sinh(SIN);
+            System.out.println("RESULT="+SINE);
+            System.out.println("ENTER '1' FOR OTHER CALCULATION");
+            System.out.println("ENTER '2' TO QUIT");
+            int choi=Integer.parseInt(read.readLine());
+         
+         if (choi==2)
+            {
+                System.exit(12);
+            }      
+        }
+         if (ch==7)
+        {
+            System.out.println("ENTER A NUMBER TO FIND CIRCUMFLEX");
+            int CIR1=Integer.parseInt(read.readLine());
+            int CIR2=Integer.parseInt(read.readLine());
+            int CIRCUMFLEX=CIR1^CIR2;
+            System.out.println("RESULT="+CIRCUMFLEX);
+        
+            System.out.println("ENTER '1' FOR OTHER CALCULATION");
+            System.out.println("ENTER '2' TO QUIT");
+            int choi=Integer.parseInt(read.readLine());
+         
+         if (choi==2)
+            {
+                System.exit(12);
+            }      
+        }
+             if (ch==8)
+        {
+            System.out.println("ENTER TWO NUMBERS TO SUBTRACT");
+            int SUB1=Integer.parseInt(read.readLine());
+            int SUB2=Integer.parseInt(read.readLine());
+            int SUBTRACTION=SUB1-SUB2;
+            System.out.println("RESULT="+SUBTRACTION);
+        
+            System.out.println("ENTER '1' FOR OTHER CALCULATION");
+            System.out.println("ENTER '2' TO QUIT");
+            int choi=Integer.parseInt(read.readLine());
+         if (choi==2)
+            {
+                System.exit(12);
+            }      
+        }
+        if (ch==9)
+        {
+             System.out.println("ENTER HOW MANY NUMBERS YOU WANT TO MULTIPLY");
+            int lo=Integer.parseInt(read.readLine());
+            int s=1;
+            System.out.println("ENTER "+lo+" NUMBER TO MULTIPLY");
+            for (int i=1;i<=lo;i++)
+            {
+            int MUL1=Integer.parseInt(read.readLine());
+            s=s*MUL1;
+        }
+            System.out.println("RESULT="+s);
+            System.out.println("ENTER '1' FOR OTHER CALCULATION");
+            System.out.println("ENTER '2' TO QUIT");
+            int choi=Integer.parseInt(read.readLine());
+         if (choi==2)
+            {
+                System.exit(12);
+            }      
+        }
+        if (ch==10)
+        {
+            System.out.println("ENTER TWO NUMBERS TO ADD AND THEN SUBTRACT");
+            int ADD1=Integer.parseInt(read.readLine());
+            int ADD2=Integer.parseInt(read.readLine());
+            int ADD=ADD1+ADD2;
+            System.out.println("ENTER A NUMBER TO SUBTRACT FROM THE SUM");
+            int SUB=Integer.parseInt(read.readLine());
+            int SUB12=ADD-SUB;
+            System.out.println("RESULT="+SUB12);
+        
+            System.out.println("ENTER '1' FOR OTHER CALCULATION");
+            System.out.println("ENTER '2' TO QUIT");
+            int choi=Integer.parseInt(read.readLine());
+         if (choi==2)
+            {
+                System.exit(12);
+            }      
+        }
+        if (ch==11)
+        {
+            System.out.println("ENTER A NUMBER TO FIND THE LOG OF NUMBER");
+            int LOG1=Integer.parseInt(read.readLine());
+            double  LOG=Math.log(LOG1);
+            System.out.println("RESULT="+LOG1);
+            System.out.println("ENTER '1' FOR OTHER CALCULATION");
+            System.out.println("ENTER '2' TO QUIT");
+            int choi=Integer.parseInt(read.readLine());
+         if (choi==2)
+            {
+                System.exit(12);
+            }      
+        }
+        if (ch==12)
+        {
+            System.out.println("ENTER A NUMBER TO FIND THE POWER OF 10");
+            int POW1=Integer.parseInt(read.readLine());
+            double  POW=Math.pow(10,POW1);
+            System.out.println("RESULT="+POW);
+            
+            System.out.println("ENTER '1' FOR OTHER CALCULATION");
+            System.out.println("ENTER '2' TO QUIT");
+            int choi=Integer.parseInt(read.readLine());
+         if (choi==2)
+            {
+                System.exit(12);
+            }      
+        }
+        
+        if (ch==13)
+        {
+            System.out.println("ENTER A NUMBER TO FIND SQUARE ROOT");
+            double SQU1=Double.parseDouble(read.readLine());
+            double SQRT=Math.sqrt(SQU1);
+            System.out.println("RESULT="+SQRT);
+        
+            System.out.println("ENTER '1' FOR OTHER CALCULATION");
+            System.out.println("ENTER '2' TO QUIT");
+            int choi=Integer.parseInt(read.readLine());
+         if (choi==2)
+            {
+                System.exit(12);
+            }      
+        }
+        if (ch==14)
+        {
+            System.out.println("ENTER A NUMBER TO FIND CUBE ROOT");
+            double CUB1=Double.parseDouble(read.readLine());
+            double CBRT=Math.cbrt(CUB1);
+            System.out.println("RESULT="+CBRT);
+        
+            System.out.println("ENTER '1' FOR OTHER CALCULATION");
+            System.out.println("ENTER '2' TO QUIT");
+            int choi=Integer.parseInt(read.readLine());
+         if (choi==2)
+            {
+                System.exit(12);
+            }      
+        }
+        if (ch==15)
+        {
+            System.out.println("ENTER A NUMBER TO FIND EXPONENT");
+            double EXC1=Double.parseDouble(read.readLine());
+            double EXPONENT =Math.exp(EXC1);
+            System.out.println("RESULT="+EXPONENT );
+        
+            System.out.println("ENTER '1' FOR OTHER CALCULATION");
+            System.out.println("ENTER '2' TO QUIT");
+            int choi=Integer.parseInt(read.readLine());
+         if (choi==2)
+            {
+                System.exit(12);
+            }       
+        }      
+        if (ch==16)
+        {
+            System.out.println("ENTER THE VALUE OF X AND Y TO FIND THE Y TO THE ROOT X(eg x=125 and y=3 so result will 5)");
+            double X=Double.parseDouble(read.readLine());
+            double Y=Double.parseDouble(read.readLine());
+            double root=Math.pow(X,1/Y);
+            System.out.println("RESULT="+root);
+        
+            System.out.println("ENTER '1' FOR OTHER CALCULATION");
+            System.out.println("ENTER '2' TO QUIT");
+            int choi=Integer.parseInt(read.readLine());
+         if (choi==2)
+            {
+                System.exit(12);
+            }      
+        }      
+        if (ch==17)
+        {
+            System.out.println("ENTER THE VALUE OF X AND Y TO FIND THE Y TO THE POWER X(eg y=5 and x=3 so result will 125)");
+            double X=Double.parseDouble(read.readLine());
+            double Y=Double.parseDouble(read.readLine());
+            double POWER=Math.pow(Y,X);
+            System.out.println("RESULT="+POWER );
+        
+            System.out.println("ENTER '1' FOR OTHER CALCULATION");
+            System.out.println("ENTER '2' TO QUIT");
+            int choi=Integer.parseInt(read.readLine());
+         if (choi==2)
+            {
+                System.exit(12);
+            }      
+        }
+        if (ch==18)
+        {
+             System.out.println("ENTER YOUR NUMBER TO FIND ITS FACTORIAL");
+            int lo=Integer.parseInt(read.readLine());
+            int s=1;            
+            for (int i=1;i<=lo;i++)
+            {
+            s=s*i;
+            
+        }
+            System.out.println("RESULT="+s);
+            
+            System.out.println("ENTER '1' FOR OTHER CALCULATION");
+            System.out.println("ENTER '2' TO QUIT");
+            int choi=Integer.parseInt(read.readLine());
+         if (choi==2)
+            {
+                System.exit(12);
+            }      
+        }
+         break; 
+          default:
+              System.err.println(" \t\t\t\t\t\t\t WRONG COMMAND \t\t\t\t\t\t\t   ");
+              
+        } 
+     }
+     }
+     }
+
